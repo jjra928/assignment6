@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+  File:  /~jraffa/public_html/assignment6HTML.html
+  91.461 Assignment6 :  Creating an interactive and dynamic table
+  Joseph Raffa, UMass Lowell Computer Science Undergradute, jraffa@cs.uml.edu
+  Date: 10-22-2014
+  Copyright (c) 2014 by Joseph Raffa.  All rights reserved.  
+  An html file to lay out the structure for a web page that will create any 
+  mulitiplication table you wish   
+-->
+<html>
+	<head>
+	
+	<!-- Starting things off we link our jquery library, our javascript, and our
+				css file. --!>
+	
+		<title> hello forms </title>
+		<meta charset="UTF-8">
+		<script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+		<script type="text/javascript" src="assignment6.JAVASCRIPT.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/assignment6CSS.css" />
+	</head>
+	<body>
+	
+	<!-- below is a form that accepts 4 numbers and only numbers. !-->
+	
+		<h1 id="titleInstruction"> Multiplication Table Generator </h1>
+		<form id="target">
+			<p id="multiplicand"> Range of the multiplicand </p>
+			<div id="inputsOneAndTwo">
+				<input type="number" id="input1">
+				<input type="number" id="input2">
+			</div>
+			<p id="multiplier"> Range of the multiplier </p>
+			<div id="inputsThreeAndFour">
+				<input type="number" id="input3">
+				<input type="number" id="input4">
+			</div>
+			<div>
+			
+			<!-- this will be our submit button. It is important for our javascript !-->
+			
+				<input type="submit" value="submit numbers" id="submitButton">
+			</div>
+		</form>
+		
+		<!-- this is a table so our javascript has somewhere to put html code. --!>	
+		
+		<p id="tableTitle">Your multiplication table:</p>		
+		<div id="tableDiv">
+			<table id="Mytable">
+			</table>
+		</div>
+	</body>
+</html>
